@@ -1,0 +1,72 @@
+﻿#RejLog
+{
+    position: absolute;
+    top:0;
+    width:100vw;
+    height:100vh;  
+    background-color: rgba(0,0,0,0.94);
+    font-size:3vmin;
+    overflow:auto;
+}
+#RejLogHeader
+{
+    color:rgb(99,147,235);
+    font-variant:small-caps;
+}
+#RejLogConfirm
+{
+
+    background-color:red;
+    font-variant:small-caps;
+    cursor:pointer;
+    top:40vh;
+    position:absolute;
+    width:30.2vw;
+    font-size:2vw;
+    text-align:center;
+    left:35vw;
+    height:5vh;
+}
+#RejLogLogin
+{
+    position:absolute;
+    width:60vw;
+    left:20vw;
+    top:20vh;
+    text-align:center;
+    height:5vh;
+}
+#RejLogLogin input
+{
+    background-color:rgb(99,147,235);
+    border:none;
+    font-size:3.5vmin;
+    margin-left:2vw;
+    height:5vh;
+    width:24vw;
+}
+#RejLogLogin span
+{
+    width:3vw;
+}
+#RejLogPassword
+{
+    position:absolute;
+    width:60vw;
+    left:20vw;
+    top:30vh;
+    text-align:center;
+}
+#RejLogPassword input
+{
+    background-color:rgb(99,147,235);
+    border:none;
+    font-size:3.5vmin;
+    margin-left:2vw;
+    height:5vh;
+    width:24vw;
+}
+#RejLogPassword span
+{
+    width:3vw;
+}

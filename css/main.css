@@ -1,0 +1,182 @@
+@import url("ustawienia.css");
+@import url("dzisiaj.css");
+@import url("tydzien.css");
+@import url("bazaDanych.css");
+@import url("alert.css");
+@import url("wyborGodziny.css");
+@import url("godziny.css");
+@import url('captcha.css');
+@import url('rejLog.css');
+
+*
+{
+    color:white;
+    margin:0;
+    padding:0;
+    font-family: 'Amiko';
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Opera */
+}
+input
+{
+    -moz-user-select: text;
+    user-select: text;    
+}
+#container
+{
+    position: absolute;
+    background-color:#222222;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+noscript
+{
+    position: absolute;
+    background-color:#222222;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color:white;
+    font-size:7vmin;
+    text-align:center;
+    line-height: 50vh;
+}
+#zaChwile
+{
+    cursor: default;
+    position: relative;
+    text-align: center;
+    top:8vmin;
+    font-size:3.5vmin;
+}
+#teraz
+{
+    cursor: default;
+    position: relative;
+    top:5vmin;
+    text-align: center;
+    font-size:3.5vmin;
+}
+#listaMainNapis li
+{
+    display: inline-block;
+}
+#listaMainGfx li
+{
+    display: inline-block;
+    background-color:black;
+}
+#listaMainGfx li img
+{
+    height:5vmin;
+}
+#listaMain
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size:3.5vmin;
+    background-color: #111111;
+}
+#listaMainGfx
+{
+    position: relative;
+    width: 100%; 
+}
+#listaMainNapis
+{
+    position: relative;
+    width: 100%; 
+}
+#listaMain ul li
+{
+    width:33.333%;
+    margin-right:-1vmin;
+    cursor: pointer;
+    text-align: center;
+}
+#zegar,#zegar span
+{
+    position: relative;
+    cursor: default;
+    text-align: center;
+    font-size: 5vw;
+}
+#imgMenu
+{
+    position: absolute;
+    top:0;
+    left:0;
+    height:15vmin;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+#imgMenu:hover
+{
+    height:20vmin;
+}
+@media only screen and (orientation: portrait) 
+{
+    #listaMain
+    {
+        height:30vmin;
+    }
+    #listaMainNapis li
+    {
+        display: block;
+    }
+    #listaMainGfx li
+    {
+        display: block;
+    }
+    #listaMain ul li
+    {
+        width:auto;
+        margin-right:0;
+    }
+    #listaMainNapis li
+    {
+        width:66.66%;
+    }
+    #listaMainGfx li
+    {
+        width:10%;
+    }
+    #listaMainGfx
+    {
+        position: relative;
+        width: 20%; 
+        float:left;
+        height: 100%;
+        background-color: black;
+    }
+    #listaMainNapis
+    {
+        position: relative;
+        width: 80%; 
+        float:left;
+        height: 100%;
+        background-color:#111111;
+    }
+    #listaMain
+    {
+        font-size:6vmin;
+    }
+    #imgMenu
+    {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+@media only screen and (orientation: landscape) 
+{
+    #listaMain
+    {
+        bottom: 0 !important;
+    }
+}

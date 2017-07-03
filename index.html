@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Plan lekcji</title>
+	<meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+    <script src="libs/jquery-3.1.0.min.js"></script>
+    <script src="js/Main.js"></script>
+    <script src="js/Zegar.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/Database.js"></script>
+    <script src="js/Ajax.js"></script>
+    <script src="js/Settings.js"></script>
+    <script src="js/Captcha.js"></script>
+    <script src="js/RejLog.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="zegar">
+            <span id="zegarGodzina"></span>
+            <span id="zegarSrodek">:</span>
+            <span id="zegarMinuty"></span>
+        </div>
+        <div id="teraz">
+            teraz:<br/>
+            JĘZYK POLSKI<br/>
+            sala 123<br/>
+        </div>
+        <div id="zaChwile">
+            za chwilę:<br/>
+            MATEMATYKA<br/>
+            sala 234<br/>
+        </div>
+        <div id="listaMain">
+            <ul id="listaMainGfx">
+                <li id="listaMainGfx1">
+                    <img src="gfx/Settings.png" alt="">
+                </li>
+                <li id="listaMainGfx2">
+                    <img src="gfx/Today.png" alt="">
+                </li>
+                <li id="listaMainGfx3">
+                    <img src="gfx/Week.png" alt="">
+                </li>
+            </ul>
+            <ul id="listaMainNapis">
+                <li id="listaMainNapis1">
+                    Ustawienia
+                </li>
+                <li id="listaMainNapis2">
+                    Dzisiaj
+                </li>
+                <li id="listaMainNapis3">
+                    Tydzień
+                </li>
+            </ul>
+        </div>
+        <img src="gfx/Menu.png" alt="" id="imgMenu">
+    </div>
+    <div id="Ustawienia">
+        <span id="UstawieniaTitle">ustawienia</span>
+        <ul>
+            <li id="ustawieniaLiGodziny"><img src="gfx/Ustawienia/clock.png" alt=""><span>godziny</span></li>
+            <li><img src="gfx/Ustawienia/palette.png" alt=""><span>kolorystyka</span></li>
+            <li><img src="gfx/Ustawienia/smartphone.png" alt=""><span>ekran startowy</span></li>
+            <li id="Ustawienia_database"><img src="gfx/Ustawienia/database.png" alt=""><span>baza danych</span></li>
+        </ul>
+    </div>
+    <div id="BazaDanych">
+        <span id="BazaDanychTitle">Baza Danych</span>
+        <ul>
+            <li><img src="gfx/Ustawienia/database.png" alt=""><span>dodaj tabele</span></li>
+            <li><img src="gfx/Ustawienia/database.png" alt=""><span>usuń tabele</span></li>
+            <li><img src="gfx/Ustawienia/database.png" alt=""><span>dodaj dane</span></li>
+            <li><img src="gfx/Ustawienia/database.png" alt=""><span>usuń dane</span></li>
+            <li><img src="gfx/Ustawienia/database.png" alt=""><span>pobierz dane</span></li>
+        </ul>
+    </div>
+    <div id="Dzisiaj"></div>
+    <div id="Godziny"> </div>
+    <div id="WyborGodziny">
+        <h1>Wybór godziny</h1>
+        <img id="wyborGodzinyAccept" src="gfx/Select/accept.png" alt="" />
+        <img id="wyborGodzinyReject" src="gfx/Select/reject.png" alt="" />
+        <img id="wyborGodzinyLine" src="gfx/line.png" alt="" />
+        <span>
+            <span id="wyborGodzinyLewySpan">0</span>
+            :
+            <span id="wyborGodzinyPrawySpan">00</span>
+        </span>
+        <div id="wyborGodzinyGodziny">
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div><br />
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div><br />
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+        </div>
+        <div id="wyborGodzinyMinuty">
+            <div>00</div>
+            <div>05</div>
+            <div>10</div>
+            <div>15</div><br />
+            <div>20</div>
+            <div>25</div>
+            <div>30</div>
+            <div>35</div><br />
+            <div>40</div>
+            <div>45</div>
+            <div>50</div>
+            <div>55</div>
+        </div>
+    </div>
+    <div id="Tydzien"></div>
+    <div class="AlertStatic">
+        <div class="AlertStaticMessage">
+        </div>
+    </div>
+    <div class="AlertLoading">
+        <div class="AlertLoadingMessage">
+            <b></b><span>.</span><span>.</span><span>.</span>
+        </div>
+        <div class="AlertLoadingLoading">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <noscript>Włącz JS w przeglądarce</noscript>
+    <script>
+        Main.init()
+        UI.init()
+        Zegar.init()
+    </script>
+</body>
+</html>

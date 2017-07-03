@@ -1,0 +1,36 @@
+﻿#BazaDanych
+{
+    padding-left:0vmin;
+    position: absolute;
+    left:-100%;
+    width:50vmin;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    font-size:4vmin;
+}
+#BazaDanychTitle
+{
+    color:rgb(123,148,206);
+    font-variant: small-caps;
+    cursor: default;
+}
+#BazaDanych img
+{
+    padding-left: 1vmin;
+    height: 10vmin;
+}
+#BazaDanych ul li span
+{
+    position: relative;
+    left:5vmin;
+    bottom:3vmin;
+}
+#BazaDanych ul li:hover
+{
+    background-color: rgb(51,75,119);
+}
+#BazaDanych ul li
+{
+    cursor: pointer;
+}
+    

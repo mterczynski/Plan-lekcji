@@ -1,0 +1,73 @@
+﻿#Captcha
+{
+    position: absolute;
+    top:0;
+    width:100vw;
+    height:100vh;  
+    background-color: rgba(0,0,0,0.94);
+    font-size:3vmin;
+    overflow:auto;
+}
+#CaptchaMessage
+{
+    position:absolute;
+    top:10%;
+    left:50%;
+    width:50vw;
+    margin-left:-25vw;
+    text-align:center;
+}
+#CaptchaImages
+{
+    position:absolute;
+    top:20%;
+    left:20vw;
+    width:60vw;
+    height:25vh;
+    
+}
+#CaptchaImages img
+{
+    width:16.4%;
+    height:100%;
+    cursor:pointer;
+    -webkit-box-shadow: 0px 0px 0.5vmin 0.5vmin rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0.5vmin 0.5vmin rgba(255,255,0,0.75);
+    box-shadow: 0px 0px 0.5vmin 0.5vmin rgba(0,0,0,0.75);
+    margin-right:0.2%;
+}
+#CaptchaConfirm
+{
+    position:absolute;
+    cursor:pointer;
+    background-color:#333333;
+    top:45%;
+    left:20vw;
+    width:30%;
+    height:5%;
+    text-align:center;
+}
+#CaptchaRefresh
+{
+    cursor:pointer;
+    background-color:rgb(99,147,235);
+    position:absolute;
+    top:45%;
+    right:20.35vw;
+    width:29.8%;
+    height:5%;
+    text-align:center;
+}
+#CaptchaRefreshImg
+{
+    width:10%;
+    height:100%;
+}
+.CaptchaImageSelected
+{
+    opacity:1;
+}
+.CaptchaImageNotSelected
+{
+    opacity:0.35;
+}
