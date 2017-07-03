@@ -1,0 +1,1 @@
+Użyte technologie: HTML, CSS, JS, ASP.NET, MySql
